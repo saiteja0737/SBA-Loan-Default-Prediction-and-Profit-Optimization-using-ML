@@ -14,29 +14,29 @@ Dataset: SBA loan records (899K original → 857K final, 95.3% retention rate)
 Target variable: Loan status (MIS_Status: Paid in Full vs Default)
 
 ## Data Quality & Cleaning:
-Missing value analysis across 27 variables with strategic treatment
-Temporal outlier removal (1987-2014 timeframe filtering)
-Currency formatting and data type conversions
+* Missing value analysis across 27 variables with strategic treatment
+* Temporal outlier removal (1987-2014 timeframe filtering)
+* Currency formatting and data type conversions
 
 ## Advanced Feature Engineering:
-Correlation-based selection for numerical variables (Term: -0.314, GrAppv: -0.118)
-Default rate analysis for categorical variables (avoiding correlation bias with dummy variables)
-Grouped 1,311 NAICS codes into 4 business risk categories using statistical methodology (>1000 loan threshold for reliability)
-Risk-based state clustering using natural breakpoints in default rates
+* Correlation-based selection for numerical variables (Term: -0.314, GrAppv: -0.118)
+* Default rate analysis for categorical variables (avoiding correlation bias with dummy variables)
+* Grouped 1,311 NAICS codes into 4 business risk categories using statistical methodology (>1000 loan threshold for reliability)
+* Risk-based state clustering using natural breakpoints in default rates
 
 ## Methodological Framework:
 
-Train-test split: 60-40 with preserved class distribution
-Feature scaling using StandardScaler for distance-based algorithms
+* Train-test split: 60-40 with preserved class distribution
+* Feature scaling using StandardScaler for distance-based algorithms
 
 ## Modeling Approach
 Implemented and compared 14 algorithms, including:
-Ensemble methods: Bagging, Random Forest, Gradient Boosting, AdaBoost, XGBoost
-Regularized regression: Logistic Regression (Standard, Lasso, Ridge, ElasticNet)
-Others: k-Nearest Neighbors, Neural Networks, LDA, QDA, Single Decision Tree
+* Ensemble methods: Bagging, Random Forest, Gradient Boosting, AdaBoost, XGBoost
+* Regularized regression: Logistic Regression (Standard, Lasso, Ridge, ElasticNet)
+* Others: k-Nearest Neighbors, Neural Networks, LDA, QDA, Single Decision Tree
 
-Hyperparameter optimization via GridSearchCV with 5-fold cross-validation
-Evaluation metrics: Accuracy, Recall, Precision, F1, ROC-AUC, Gains & Lift charts
+* Hyperparameter optimization via GridSearchCV with 5-fold cross-validation
+* Evaluation metrics: Accuracy, Recall, Precision, F1, ROC-AUC, Gains & Lift charts
 
 ## Profit framework:  
 Approve + repaid loan → +5% of disbursement
