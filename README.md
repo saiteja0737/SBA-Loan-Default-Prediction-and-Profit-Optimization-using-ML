@@ -39,9 +39,9 @@ Implemented and compared 14 algorithms, including:
 * Evaluation metrics: Accuracy, Recall, Precision, F1, ROC-AUC, Gains & Lift charts
 
 ## Profit framework:  
-Approve + repaid loan → +5% of disbursement
-Approve + defaulted loan → –25% of disbursement
-  - Denied loan → **$0**  
+* Approve + repaid loan → +5% of disbursement
+* Approve + defaulted loan → –25% of disbursement
+*  Denied loan → **$0**  
 
 ## Results  
 - **Best Model:** Bagging (Decision Trees)  
